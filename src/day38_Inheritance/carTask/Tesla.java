@@ -10,3 +10,8 @@ public class Tesla extends Car{
         System.out.println(brand + " " + model + " is in autopilot mode");
     }
 }
+/*
+3. Tesla:
+					extra methods:
+						autoPilot()
+ */

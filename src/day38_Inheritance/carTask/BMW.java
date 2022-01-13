@@ -14,3 +14,10 @@ public class BMW extends Car{
         System.out.println(brand + " " + model + " is a racing car");
     }
 }
+
+/*
+2. BMW:
+					extra methods:
+						breaksDown()
+						racing()
+ */
