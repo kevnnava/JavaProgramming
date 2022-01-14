@@ -1,6 +1,6 @@
 package day39_Recap.shapeTask;
 
-public class Rectangle {
+public class Rectangle extends Shape{
 
     private double length, width;
 
@@ -26,6 +26,12 @@ public class Rectangle {
             System.exit(1);
         }
         this.width = width;
+    }
+
+    public Rectangle(double length, double width) {
+        super("Rectangle");
+        setLength(length);
+        setWidth(width);
     }
 }
 /*
