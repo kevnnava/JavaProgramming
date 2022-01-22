@@ -46,5 +46,19 @@ public class TryCatchBlocks {
 
         System.out.println("Test 2 Completed");
 
+        System.out.println("--------------------------");
+
+        System.out.println("Test 3 Started");
+
+        try {
+            System.out.println("Cydeo".substring(2, 0) );
+        }catch (RuntimeException e){
+            e.printStackTrace();
+        }
+
+        System.out.println("Test 4 Started");
+
+        System.out.println("--------------------------");
+
     }
 }
