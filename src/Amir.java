@@ -14,6 +14,8 @@ public class Amir {
         String[] result = merge(a1, a2);
 
         System.out.println(Arrays.toString(result));
+
+
     }
 
         // merge the given two arrays and returns the new array
@@ -78,7 +80,9 @@ public class Amir {
 
 
 
+
         }
+
 
 
 
