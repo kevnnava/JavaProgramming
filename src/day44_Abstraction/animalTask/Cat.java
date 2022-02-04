@@ -8,7 +8,7 @@ public final class Cat extends Animal{
     }
 
     public void eat() {
-        System.out.println(getName() + " is eating");
+        System.out.println(getName() + " is eating biryani");
     }
 
     public void meow(){
