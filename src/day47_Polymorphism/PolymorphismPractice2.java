@@ -1,8 +1,12 @@
 package day47_Polymorphism;
 
+import day32_Constructor.Test;
 import day43_Abstraction.employeeTask.Developer;
 import day43_Abstraction.employeeTask.Employee;
 import day43_Abstraction.employeeTask.Tester;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class PolymorphismPractice2 {
 
@@ -25,6 +29,38 @@ public class PolymorphismPractice2 {
                 new Developer("Enes",  26, 'M',14, "Full Stack Developer", 142000),
                 new Tester("Mikael",  30, 'M',15, "SDET", 105000),
         };
+
+        List<Employee> scrumMembers = new ArrayList<>();
+
+        for (Employee employee : employees) {
+            if (employee instanceof Tester || employee instanceof Developer){
+                scrumMembers.add(employee);
+            }
+        }
+
+        System.out.println("----------------------------------------");
+
+        List<Tester> testers = new ArrayList<>();
+        List<Developer> developers = new ArrayList<>();
+
+        for (Employee scrumMember : scrumMembers) {
+            if (scrumMember instanceof Tester){
+                testers.add((Tester) scrumMember);
+            }
+
+            if (scrumMember instanceof Developer){
+                developers.add((Developer) scrumMember);
+            }
+
+        }
+
+        System.out.println("-------------------------------------------------------");
+
+        Tester testerWithMaxSalary = testers.get(0);
+        Developer developerWithMaxSalary = developers.get(0);
+
+
+
 
     }
 }
