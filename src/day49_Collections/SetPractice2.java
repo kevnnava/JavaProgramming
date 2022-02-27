@@ -71,8 +71,14 @@ public class SetPractice2 {
         Set<String> names = new LinkedHashSet<>();
         names.addAll(Arrays.asList("Ahmet", "Ahmet", "John", "James", "Breanna", "Shay", "Ahmet"));
 
+        System.out.println(names.toArray(new String[0]) [2] );
 
+        System.out.println(new ArrayList<>(names).get(4) );
 
+        System.out.println("----");
+        for (String each : names){
+            System.out.println(each);
+        }
 
 
 
